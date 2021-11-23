@@ -41,7 +41,7 @@ const main = (): void => {
                   "\nEnter the amount of addresses you would like after the index (max 2^63-1 - index): ",
                   (amount) => {
                     console.log(
-                      "\n" +
+                      
                         generateAccountList(key, Number(index), Number(amount))
                     );
                   }
@@ -57,7 +57,7 @@ const main = (): void => {
             rl.question(
               "\nEnter the index of the account list (max 2^63-1): ",
               (index) => {
-                console.log("\n" + generateAccountMnemonic(key, Number(index)));
+                console.log(generateAccountMnemonic(key, Number(index)));
               }
             );
           }

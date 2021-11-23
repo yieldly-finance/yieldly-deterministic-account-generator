@@ -16,8 +16,10 @@ func MasterToDerivation(_mnemonic string) (string){
 }
 
 func DerivationToMaster(_key string)(string){
+	decoded, err := b64.StdEncoding.DecodeString(_key)
+	
 	var arr [32]byte
-	copy(arr[:], _key)
+	copy(arr[:], decoded)
 	
 	key, err := mnemonic.FromMasterDerivationKey(arr);
 	
