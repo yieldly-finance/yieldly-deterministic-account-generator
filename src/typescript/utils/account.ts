@@ -22,7 +22,7 @@ export const generateAccountList = (
   }
 
   for (var i = index; i < index + amount; i++) {
-    let info = "AlgorandDeterministicKey-1";
+    let info = "AlgorandDeterministicKey-" + i;
 
     let key = hkdf.expand(
       "SHA512-256",
@@ -59,7 +59,7 @@ export const generateAccountMnemonic = (
   }
 
   for (var i = index; i < index + 1; i++) {
-    let info = "AlgorandDeterministicKey-1";
+    let info = "AlgorandDeterministicKey-" + i;
 
     let key = hkdf.expand(
       "SHA512-256",
