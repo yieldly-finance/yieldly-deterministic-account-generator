@@ -25,7 +25,7 @@ Generate a new wallet like so (in this example sandbox will be used):
 
 ![screenshot 2](./docs/2.png)
 
-Select yes to being able to see your wallets mnemonic, this will generate a 25 word sentence that you will need to note down somewhere. After obtaining your wallets mnemonic, run the program as described above and type "1" into the option selection.
+Select yes to be able to see your wallets mnemonic, this will generate a 25 word sentence that you will need to note down somewhere. After obtaining your wallets mnemonic, run the program as described above and type "1" into the option selection.
 
 ![screenshot 3](./docs/3.png)
 
@@ -54,7 +54,7 @@ Select option 3:
 
 ![screenshot 7](./docs/7.png)
 
-You will then be asked to enter your mnemonic phrase or master key, followed by the index of where you would like to start (for a deeper look into how the accounts are generated, please go to the "How it works" section), for testing purposes, it is recommended that you start at index 1. Lastly you will be prompted on how many accounts after you would like to generate after this index. Please note that the maximum number of accounts that can be generated is 2⁶³ - 1.
+You will then be asked to enter your mnemonic phrase or master key, followed by the index of where you would like to start (for a deeper look into how the accounts are generated, please go to the "How it works" section), for testing purposes, it is recommended that you start at index 1. Lastly, you will be prompted on how many accounts you would like to generate after this index. Please note that the maximum number of accounts that can be generated is 2⁶³ - 1.
 
 If all your information is correct and in range, it should print a list of addresses as shown below:
 
@@ -63,7 +63,7 @@ If all your information is correct and in range, it should print a list of addre
 If you have this wallet imported in your system, you should be able to generate the same addresses to verify that the program works.
 
 ### GENERATING ACCOUNT MNEMONICS FROM EITHER DERIVATION MASTER KEY OR MNEMONIC
-Select option 4. Similar to the above option, you will then be asked to enter your mnemonic phrase or master key, followed by the index of where you would like to start (for more information, please go to the "How it works" section), for testing purposes, it is recommended that you start at index 1. Unlike generating account private keys, this example has been limited to producing 1 at a time. This is primarily for safety reasons for new users just wanting to learn how the system works without accidently exposing every mnemonic in their wallet.
+Select option 4. Similar to the above option, you will then be asked to enter your mnemonic phrase or master key, followed by the index of where you would like to start (for more information, please go to the "How it works" section), for testing purposes, it is recommended that you start at index 1. Unlike generating account private keys, this example has been limited to producing 1 at a time. This is primarily for safety reasons for new users just wanting to learn how the system works without accidentally exposing every mnemonic in their wallet.
 
 If all your information is correct and in range, it should print a list of addresses as shown below:
 
@@ -71,6 +71,8 @@ If all your information is correct and in range, it should print a list of addre
 
 If you have this wallet imported in your system, you should be able to export the mnemonic to verify that both are equal and thus, verifies that the system can indeed generate accounts deterministically that are ready for use in the Algorand ecosystem.
 
+## Disclaimer
+Please note that these are our own internal tools that we are opening up to the wider Algorand developer community and that they have not been audited. Any unexpected issues that might arise from the use of these tools is on the onus of you as the user and by the use of these tools you agree that Yieldly is not liable for any damages that may occur.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
