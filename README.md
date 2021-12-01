@@ -1,5 +1,7 @@
 # yieldly-deterministic-account-generator
 
+*It is not recommended that you share your key or mnemonic around. If anyone gets their hands on either your mnemonic or the derived master key, then they will be able to recreate the mnemonics / private keys of any account derived from the methods shown later.*
+
 If you wish to test the compatibility with kmd, please refer to one of the following options to install algod + kmd to verify that the accounts you are generating are indeed deterministic.
 
 Sandbox (RECOMMENDED): [https://github.com/algorand/sandbox](https://github.com/algorand/sandbox)
@@ -33,8 +35,6 @@ You will then be asked to input your mnemonic phrase. Once you have entered all 
 
 ![screenshot 4](./docs/4.png)
 
-*It is not recommended that you share this key or your mnemonic around. If anyone gets their hands on either your mnemonic or the derived master key, then they will be able to recreate the mnemonics / private keys of any account derived from the methods shown later in this document.*
-
 ### GENERATING DERIVATION MASTER KEY FROM MNEMONIC
 
 Select option 2:
@@ -46,8 +46,6 @@ Either by using the output generated from the above method or a key that you hav
 ![screenshot 6](./docs/6.png)
 
 If you have used the method described under **"GENERATING MNEMONIC FROM DERIVATION MASTER KEY"** you should notice that the mnemonic that you entered is the same that was output in the console from this method. Showcasing that the system performs as expected and means you can freely call between the two functions.
-
-*It is not recommended that you share this key or your mnemonic around. If anyone gets their hands on either your mnemonic or the derived master key, then they will be able to recreate the mnemonics / private keys of any account derived from the methods shown later.*
 
 ### GENERATING ACCOUNT ADDRESSES FROM EITHER DERIVATION MASTER KEY OR MNEMONIC
 Select option 3:
@@ -65,7 +63,7 @@ If you have this wallet imported in your system, you should be able to generate 
 ### GENERATING ACCOUNT MNEMONICS FROM EITHER DERIVATION MASTER KEY OR MNEMONIC
 Select option 4. Similar to the above option, you will then be asked to enter your mnemonic phrase or master key, followed by the index of where you would like to start (for more information, please go to the "How it works" section), for testing purposes, it is recommended that you start at index 1. Unlike generating account private keys, this example has been limited to producing 1 at a time. This is primarily for safety reasons for new users just wanting to learn how the system works without accidentally exposing every mnemonic in their wallet.
 
-If all your information is correct and in range, it should print a list of addresses as shown below:
+If all your information is correct and in range, it should print a mnemonic as shown below:
 
 ![screenshot 9](./docs/9.png)
 
