@@ -67,7 +67,7 @@ If all your information is correct and in range, it should print a mnemonic as s
 
 ![screenshot 9](./docs/9.png)
 
-If you have this wallet imported in your system, you should be able to export the mnemonic to verify that both are equal and thus, verifies that the system can indeed generate accounts deterministically that are ready for use in the Algorand ecosystem.
+If you have this wallet imported in your system, you should be able to export the mnemonic to verify that both are equal and thus, verifies that the system can indeed deterministically generate accounts that are ready for use in the Algorand ecosystem.
 
 ## Disclaimer
 Please note that these are our own internal tools that we are opening up to the wider Algorand developer community and that they have not been audited. Any unexpected issues that might arise from the use of these tools is on the onus of you as the user and by the use of these tools you agree that Yieldly is not liable for any damages that may occur.
